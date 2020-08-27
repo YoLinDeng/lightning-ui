@@ -38,18 +38,18 @@ context.emit('update:value', !props.value)
 <Switch v-mode:value="y"></Switch>
 ```
 ### provide 与inject的使用
-祖先组件中使用 ` provide('menuVisible', menuVisible)`
+祖先组件中使用 ` provide('menuVisible', menuVisible)`  
 在其下面的所以子组件都可以通过`const menuVisible = inject<Ref<Boolean>>('menuVisible')获取
 
 ### vue3属性绑定
-默认所以属性都是绑定在根元素上
-使用inheritAttrs: false 可以取消默认绑定
-使用$attrs或者context.attrs获取所以属性
-使用v-bind=“$attrs”批量绑定属性
-使用const = { size, ...rest } = context.attrs将属性分开
+* 默认所以属性都是绑定在根元素上
+* 使用inheritAttrs: false 可以取消默认绑定
+* 使用$attrs或者context.attrs获取所以属性
+* 使用v-bind=“$attrs”批量绑定属性
+* 使用const = { size, ...rest } = context.attrs将属性分开
 
 ### props 和attrs区别
-props要先声明才能取值， attrs不用先声明
-props不包含事件，attrs包含
-props没有声明的属性，会跑到attrs里面
-props支持string以外的类型，attrs只有string类型
+* props要先声明才能取值， attrs不用先声明
+* props不包含事件，attrs包含
+* props没有声明的属性，会跑到attrs里面
+* props支持string以外的类型，attrs只有string类型
