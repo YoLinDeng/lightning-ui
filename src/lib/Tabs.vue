@@ -14,12 +14,12 @@
       <div class="yoli-tabs-nav-indicator" ref="indicator"></div>
     </div>
     <div class="yoli-tabs-content">
-      <component class="yoli-tabs-content-item" v-for="(c, i) in defaults" :is="c" :key="i" :class="{selected: c.props.title === selected }"/>
+      <component class="yoli-tabs-content-item" :is="current" :key="current.props.title"/>
     </div>
   </div>
 </template>
 <script lang="ts">
-import { onMounted, onUpdated, ref, watchEffect } from 'vue'
+import { computed, onMounted, onUpdated, ref, watchEffect } from 'vue'
 import Tab from './Tab.vue'
 export default {
   props: {
@@ -49,6 +49,9 @@ export default {
       }
     })
     const titles = defaults.map(x => x.props.title)
+    const current = computed(() => {
+      return defaults.find(x => x.props.title === props.selected)
+    })
     const select = (title: String) => {
       context.emit('update:selected', title)
     }
@@ -58,7 +61,8 @@ export default {
       select,
       selectedItem,
       indicator,
-      container
+      container,
+      current
     }
   }
 }
@@ -96,12 +100,6 @@ $border-color: #d9d9d9;
   }
   &-content {
     padding: 8px 0;
-    &-item {
-      display: none;
-      &.selected {
-        display: block;
-      }
-    }
   }
 }
 </style>
