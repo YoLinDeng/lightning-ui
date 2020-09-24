@@ -1,4 +1,4 @@
-# yoli-ui
+# lightning-ui
 一个基于vue3+ts的ui库，使用vite搭建
 ### 1、安装依赖 
 yarn 
