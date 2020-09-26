@@ -6,7 +6,7 @@
         <h1>闪电UI</h1>
         <h2>一个厉害的UI 框架</h2>
         <p class="actions">
-          <a href="">GitHub</a>
+          <a href="https://github.com/YoLinDeng/lightning-ui">GitHub</a>
           <router-link to="/doc">开始</router-link>
         </p>
       </div>
@@ -25,7 +25,7 @@
           <use xlink:href="#icon-ts"></use>
         </svg>
         <h3>基于 TypeScript </h3>
-        <p>源代码采用 TypeScript 书写（非严格检查）</p>
+        <p>源代码采用 TypeScript 书写</p>
       </li>
       <li>
         <svg>
@@ -56,18 +56,27 @@ $color: #007974;
 }
 .features {
   margin: 64px auto;
-  width: 400px;
+  padding: 0 16px;
   @media (min-width: 800px) {
     width: 800px;
+    >ul {
+      >li {
+        width: 50%;
+      }
+    }
   }
   @media (min-width: 1200px) {
     width: 1200px;
+    >ul {
+      >li {
+        width: 33.3333%;
+      }
+    }
   }
   >ul {
     display: flex;
     flex-wrap: wrap;
     >li {
-      width: 400px;
       margin: 16px 0;
       display: grid;
       justify-content: start;
