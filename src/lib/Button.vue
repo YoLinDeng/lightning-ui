@@ -1,6 +1,6 @@
 <template>
-<button class="yoli-button" :class="classes" :disabled="disabled">
-  <span v-if="loading" class="yoli-loadingIndicator"></span>
+<button class="lightning-button" :class="classes" :disabled="disabled">
+  <span v-if="loading" class="lightning-loadingIndicator"></span>
   <slot />
 </button>
 </template>
@@ -40,9 +40,9 @@ export default {
     } = props
     const classes = computed(() => {
       return {
-        [`yoli-theme-${theme}`]: theme,
-        [`yoli-size-${size}`]: size,
-        [`yoli-level-${level}`]: level
+        [`lightning-theme-${theme}`]: theme,
+        [`lightning-size-${size}`]: size,
+        [`lightning-level-${level}`]: level
       }
     })
     return {
@@ -61,7 +61,7 @@ $radius: 4px;
 $red: red;
 $grey: grey;
 
-.yoli-button {
+.lightning-button {
   box-sizing: border-box;
   height: $h;
   padding: 0 12px;
@@ -95,7 +95,7 @@ $grey: grey;
     border: 0;
   }
 
-  &.yoli-theme-link {
+  &.lightning-theme-link {
     border-color: transparent;
     box-shadow: none;
     color: $blue;
@@ -106,7 +106,7 @@ $grey: grey;
     }
   }
 
-  &.yoli-theme-text {
+  &.lightning-theme-text {
     border-color: transparent;
     box-shadow: none;
     color: inherit;
@@ -117,20 +117,20 @@ $grey: grey;
     }
   }
 
-  &.yoli-size-big {
+  &.lightning-size-big {
     font-size: 24px;
     height: 48px;
     padding: 0 16px;
   }
 
-  &.yoli-size-small {
+  &.lightning-size-small {
     font-size: 12px;
     height: 20px;
     padding: 0 4px;
   }
 
-  &.yoli-theme-button {
-    &.yoli-level-main {
+  &.lightning-theme-button {
+    &.lightning-level-main {
       background: $blue;
       color: white;
       border-color: $blue;
@@ -142,7 +142,7 @@ $grey: grey;
       }
     }
 
-    &.yoli-level-danger {
+    &.lightning-level-danger {
       background: $red;
       border-color: $red;
       color: white;
@@ -155,8 +155,8 @@ $grey: grey;
     }
   }
 
-  &.yoli-theme-link {
-    &.yoli-level-danger {
+  &.lightning-theme-link {
+    &.lightning-level-danger {
       color: $red;
 
       &:hover,
@@ -166,8 +166,8 @@ $grey: grey;
     }
   }
 
-  &.yoli-theme-text {
-    &.yoli-level-main {
+  &.lightning-theme-text {
+    &.lightning-level-main {
       color: $blue;
 
       &:hover,
@@ -176,7 +176,7 @@ $grey: grey;
       }
     }
 
-    &.yoli-level-danger {
+    &.lightning-level-danger {
       color: $red;
 
       &:hover,
@@ -186,7 +186,7 @@ $grey: grey;
     }
   }
 
-  &.yoli-theme-button {
+  &.lightning-theme-button {
     &[disabled] {
       cursor: not-allowed;
       color: $grey;
@@ -197,15 +197,15 @@ $grey: grey;
     }
   }
 
-  &.yoli-theme-link,
-  &.yoli-theme-text {
+  &.lightning-theme-link,
+  &.lightning-theme-text {
     &[disabled] {
       cursor: not-allowed;
       color: $grey;
     }
   }
 
-  >.yoli-loadingIndicator {
+  >.lightning-loadingIndicator {
     width: 14px;
     height: 14px;
     display: inline-block;
@@ -214,11 +214,11 @@ $grey: grey;
     border-color: $blue $blue $blue transparent;
     border-style: solid;
     border-width: 2px;
-    animation: yoli-spin 1s infinite linear;
+    animation: lightning-spin 1s infinite linear;
   }
 }
 
-@keyframes yoli-spin {
+@keyframes lightning-spin {
   0% {
     transform: rotate(0deg)
   }

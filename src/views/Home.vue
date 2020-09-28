@@ -18,7 +18,7 @@
           <use xlink:href="#icon-vue"></use>
         </svg>
         <h3>基于 Vue 3</h3>
-        <p>骄傲地使用了 Vue 3 Composition API</p>
+        <p>使用了 Vue 3 Composition API</p>
       </li>
       <li>
         <svg>
@@ -47,12 +47,12 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-$green: #02bcb0;
+$green: #14af6d;
 $border-radius: 4px;
-$color: #007974;
+$color: #fff;
 
 .nav-and-Banner {
-  background: linear-gradient(145deg, rgba(227, 255, 253, 1) 0%, rgba(183, 233, 230, 1) 100%);
+  background: linear-gradient(145deg, rgba(237,238,10,1) 0%, rgba(237,174,13,1) 35%, rgba(255,46,0,1) 100%);
 }
 .features {
   margin: 64px auto;
@@ -119,6 +119,7 @@ $color: #007974;
       border-radius: $border-radius;
       &:hover {
         text-decoration: none;
+        opacity: 0.8;
       }
     }
   }

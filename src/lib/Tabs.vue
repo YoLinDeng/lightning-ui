@@ -1,20 +1,20 @@
 <template>
-  <div class="yoli-tabs">
-    <div class="yoli-tabs-nav" ref="container">
+  <div class="lightning-tabs">
+    <div class="lightning-tabs-nav" ref="container">
       <div 
         v-for="(t, i) in titles" 
         :key="i" 
-        class="yoli-tabs-nav-item" 
+        class="lightning-tabs-nav-item" 
         :class="{selected: t === selected}"
         @click="select(t)"
         :ref="el => { if(t === selected) selectedItem = el}"
       >
         {{t}}
       </div>
-      <div class="yoli-tabs-nav-indicator" ref="indicator"></div>
+      <div class="lightning-tabs-nav-indicator" ref="indicator"></div>
     </div>
-    <div class="yoli-tabs-content">
-      <component class="yoli-tabs-content-item" :is="current" :key="current.props.title"/>
+    <div class="lightning-tabs-content">
+      <component class="lightning-tabs-content-item" :is="current" :key="current.props.title"/>
     </div>
   </div>
 </template>
@@ -71,7 +71,7 @@ export default {
 $blue: #40a9ff;
 $color: #333;
 $border-color: #d9d9d9;
-.yoli-tabs {
+.lightning-tabs {
   &-nav {
     display: flex;
     color: $color;

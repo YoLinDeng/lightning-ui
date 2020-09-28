@@ -3,16 +3,15 @@
   <h1>Switch 组件示例 </h1>
   <Demo :component="Switch1Demo" />
   <Demo :component="Switch2Demo" />
+  <Demo :component="Switch3Demo" />
 </div>
 </template>
 
 <script lang="ts">
 import Switch1Demo from './Switch1.demo.vue'
 import Switch2Demo from './Switch2.demo.vue'
+import Switch3Demo from './Switch3.demo.vue'
 import Demo from './Demo.vue'
-import 'prismjs'
-import 'prismjs/themes/prism-okaidia.css'
-const Prism = (window as any).Prism
 export default {
   components: {
     Demo
@@ -21,7 +20,7 @@ export default {
     return {
       Switch1Demo,
       Switch2Demo,
-      Prism
+      Switch3Demo
     }
   }
 }

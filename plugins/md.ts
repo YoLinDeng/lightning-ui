@@ -1,3 +1,4 @@
+// @ts-nocheck
 import path from 'path'
 import fs from 'fs'
 import marked from 'marked'
@@ -15,7 +16,7 @@ export function md() {
           if (ctx.path.endsWith('.md')) {
             ctx.type = 'js'
             const filePath = path.join(process.cwd(), ctx.path)
-            ctx.body = mdToJs(fs.readFileSync(filePath)?.toString())
+            ctx.body = mdToJs(fs.readFileSync(filePath).toString())
           } else {
             await next()
           }
@@ -27,4 +28,4 @@ export function md() {
       transform: ({ code }) => mdToJs(code) 
     }]
   }
-} 
+}

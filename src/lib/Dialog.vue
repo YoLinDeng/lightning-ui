@@ -1,12 +1,12 @@
 <template>
 <template v-if="visible">
   <Teleport to="body">
-    <div class="yoli-dialog-overlay" @click="onClickOverlay"></div>
-    <div class="yoli-dialog-wrapper">
-      <div class="yoli-dialog">
+    <div class="lightning-dialog-overlay" @click="onClickOverlay"></div>
+    <div class="lightning-dialog-wrapper">
+      <div class="lightning-dialog">
         <header>
           <slot name="title" />
-          <span class="yoli-dialog-close" @click="close"></span>
+          <span class="lightning-dialog-close" @click="close"></span>
         </header>
         <main>
           <slot name="content" />
@@ -81,7 +81,7 @@ export default {
 $radius: 4px;
 $border-color: #d9d9d9;
 
-.yoli-dialog {
+.lightning-dialog {
   background: white;
   border-radius: $radius;
   box-shadow: 0 0 3px fade_out(black, 0.5);
