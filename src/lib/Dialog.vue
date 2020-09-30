@@ -1,24 +1,24 @@
 <template>
-<template v-if="visible">
-  <Teleport to="body">
-    <div class="lightning-dialog-overlay" @click="onClickOverlay"></div>
-    <div class="lightning-dialog-wrapper">
-      <div class="lightning-dialog">
-        <header>
-          <slot name="title" />
-          <span class="lightning-dialog-close" @click="close"></span>
-        </header>
-        <main>
-          <slot name="content" />
-        </main>
-        <footer>
-          <Button level="main" @click="ok">OK</Button>
-          <Button @click="cancel">Cancel</Button>
-        </footer>
+  <template v-if="visible">
+    <Teleport to="body">
+      <div class="lightning-dialog-overlay" @click="onClickOverlay"></div>
+      <div class="lightning-dialog-wrapper">
+        <div class="lightning-dialog">
+          <header>
+            <slot name="title" />
+            <span class="lightning-dialog-close" @click="close"></span>
+          </header>
+          <main>
+            <slot name="content" />
+          </main>
+          <footer>
+            <Button level="main" @click="ok">OK</Button>
+            <Button @click="cancel">Cancel</Button>
+          </footer>
+        </div>
       </div>
-    </div>
-  </Teleport>
-</template>
+    </Teleport>
+  </template>
 </template>
 
 <script lang="ts">

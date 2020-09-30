@@ -1,6 +1,9 @@
 <template>
   <div class="demo">
     <h2>{{ component.__sourceCodeTitle }}</h2>
+    <div class="desc-box">
+      <slot name="desc" />
+    </div>
     <div class="demo-component">
       <component :is="component" />
     </div>
@@ -58,6 +61,12 @@ $border-color: #d9d9d9;
     font-size: 20px;
     padding: 8px 16px;
     border-bottom: 1px solid $border-color;
+  }
+  > .desc-box {
+    font-size: 14px;
+    color: #333;
+    margin-left: 10px;
+    margin-top: 10px;
   }
   &-component {
     padding: 16px;

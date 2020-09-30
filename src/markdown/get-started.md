@@ -4,7 +4,9 @@
 然后在你的代码中写入下面的代码
 
 ```
-import {Button, Tabs, Switch, Dialog} from "lightning-ui"
+import { Button, Tab, Tabs, Switch, Dialog, openDialog } from "lightning-ui"
+import 'lightning-ui/dist/lib/lightning.css'
+
 ```
 
 就可以使用我提供的组件了。
@@ -20,9 +22,16 @@ import {Button, Tabs, Switch, Dialog} from "lightning-ui"
   </div>
 </template>
 <script>
-import {Button, Tabs, Switch, Dialog} from "lightning-ui"
+import { Button, Tab, Tabs, Switch, Dialog, openDialog } from "lightning-ui"
 export default {
-  components: {Button}
+  components: { 
+    Button,
+    Tab,
+    Tabs,
+    Switch,
+    Dialog,
+    openDialog
+  }
 }
 </script>
 ```
