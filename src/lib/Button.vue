@@ -93,6 +93,7 @@ $lightning-wave-shadow-color:#1890ff;
 
   &+& {
     margin-left: 8px;
+    margin-bottom: 8px;
   }
 
   &:hover,
