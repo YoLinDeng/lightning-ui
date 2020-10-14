@@ -12,8 +12,8 @@
             <slot name="content" />
           </main>
           <footer>
-            <Button level="main" @click="ok">OK</Button>
-            <Button @click="cancel">Cancel</Button>
+            <Button level="main" @click="ok">{{confirmText}}</Button>
+            <Button @click="cancel">{{cancelText}}</Button>
           </footer>
         </div>
       </div>
@@ -25,9 +25,13 @@
 import Button from "./Button.vue";
 export default {
   props: {
-    title: {
+    confirmText: {
       type: String,
-      default: '提示'
+      default: 'Ok'
+    },
+    cancelText: {
+      type: String,
+      default: 'Cancel'
     },
     visible: {
       type: Boolean,

@@ -4,13 +4,20 @@
 <template>
 <div>
   <Button @click="toggle">打开对话框</Button>
-  <Dialog v-model:visible="x" :closeOnClickOverlay="false" :ok="f1" :cancel="f2">
-    <template v-slot:content>
-      <strong>hi</strong>
-      <div>hi2</div>
-    </template>
+  <Dialog
+    v-model:visible="visibleDialog"
+    :closeOnClickOverlay="false"
+    :ok="confirm"
+    :cancel="cancel"
+    confirmText="确认"
+    cancelText="取消"
+    >
     <template v-slot:title>
-      <strong>加粗的标题</strong>
+      <strong>加粗标题</strong>
+    </template>
+    <template v-slot:content>
+      <strong>hi～</strong>
+      <div>hello</div>
     </template>
   </Dialog>
 </div>
@@ -31,19 +38,22 @@ export default {
     Button
   },
   setup() {
-    const x = ref(false)
+    const visibleDialog = ref(false)
     const toggle = () => {
-      x.value = !x.value
+      visibleDialog.value = !visibleDialog.value
     }
-    const f1 = () => {
+    const confirm = () => {
+      console.log('click confirm')
       return false
     }
-    const f2 = () => {}
+    const cancel = () => {
+      console.log('click cancel')
+    }
     return {
-      x,
+      visibleDialog,
       toggle,
-      f1,
-      f2
+      confirm,
+      cancel
     }
   }
 }

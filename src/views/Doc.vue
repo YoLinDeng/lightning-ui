@@ -80,7 +80,7 @@ $aside-index : 10;
   }
 }
 aside {
-  background: lightblue;
+  background: linear-gradient(180deg, rgba(237,238,10,1) 0%, rgba(237,172,13,1) 43%, rgba(171,59,23,1) 100%);
   width: 150px;
   position: fixed;
   top: 0;

@@ -4,7 +4,8 @@
       <Topnav />
       <div class="banner">
         <h1>闪电UI</h1>
-        <h2>一个厉害的UI 框架</h2>
+        <h2>一个简单易懂的UI 框架</h2>
+        <h3>组件持续更新优化中</h3>
         <p class="actions">
           <a href="https://github.com/YoLinDeng/lightning-ui">GitHub</a>
           <router-link to="/doc">开始</router-link>

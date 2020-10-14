@@ -1,9 +1,21 @@
 <template>
 <div>
   <h1>Switch 组件示例 </h1>
-  <Demo :component="Switch1Demo" />
-  <Demo :component="Switch2Demo" />
-  <Demo :component="Switch3Demo" />
+  <Demo :component="Switch1Demo">
+    <template v-slot:desc>
+      通过设置value，它接收一个Boolean类型，为true代表开启状态，false为关闭状态
+    </template>
+  </Demo>
+  <Demo :component="Switch2Demo">
+    <template v-slot:desc>
+      设置disable属性，使Switch禁用
+    </template>
+  </Demo>
+  <Demo :component="Switch3Demo">
+    <template v-slot:desc>
+      设置isShowText属性，当值为true时表示展示文案，它的默认值为false。默认checkedText为开启、unCheckedText为关闭
+    </template>
+  </Demo>
 </div>
 </template>
 
