@@ -24,6 +24,7 @@
 <script lang="ts">
 import Button from "./Button.vue";
 export default {
+  name: 'l-dialog',
   props: {
     confirmText: {
       type: String,

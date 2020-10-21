@@ -10,6 +10,7 @@ import {
   computed, ref
 } from 'vue'
 export default {
+  name: 'l-button',
   props: {
     theme: {
       type: String,

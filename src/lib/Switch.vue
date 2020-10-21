@@ -7,6 +7,7 @@
 <script lang="ts">
 import { ref } from 'vue'
 export default {
+  name: 'l-switch',
   props: {
     value: Boolean,
     checkedText: {

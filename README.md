@@ -1,14 +1,14 @@
 # lightning-ui
-一个基于vue3+ts的ui库，使用vite搭建
+一个基于vue3+ts的ui库，使用vite搭建，[官网地址](https://yolindeng.gitee.io/lightning-ui-website/#/)
 ### 安装组件
 组件已通过rollup打包后，上传npm。 
 在vue3脚手架项目用运行：
 ```
-npm install lightning-ui
+npm install lightning-ui-beta
 ```
 或  
 ```
-yarn add lightning-ui
+yarn add lightning-ui-beta
 ```
 ### 本地运行项目
 #### 1、安装依赖 

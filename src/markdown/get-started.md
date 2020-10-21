@@ -4,8 +4,8 @@
 然后在你的代码中写入下面的代码
 
 ```
-import { Button, Tab, Tabs, Switch, Dialog, openDialog } from "lightning-ui"
-import 'lightning-ui/dist/lib/lightning.css'
+import { Button, Tab, Tabs, Switch, Dialog, openDialog } from "lightning-ui-beta"
+import 'lightning-ui-beta/dist/lib/lightning.css'
 
 ```
 
@@ -22,7 +22,7 @@ import 'lightning-ui/dist/lib/lightning.css'
   </div>
 </template>
 <script>
-import { Button, Tab, Tabs, Switch, Dialog, openDialog } from "lightning-ui"
+import { Button, Tab, Tabs, Switch, Dialog, openDialog } from "lightning-ui-beta"
 export default {
   components: { 
     Button,
