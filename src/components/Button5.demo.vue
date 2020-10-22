@@ -3,16 +3,18 @@
 </demo>
 <template>
 <div>
-  <Button loading>加载中</Button>
-  <Button>加载完毕</Button>
+  <l-button loading>加载中</l-button>
+  <l-button>加载完毕</l-button>
 </div>
 </template>
 
 <script lang="ts">
-import Button from "../lib/Button.vue";
+import lUI from 'lightning-ui-beta'
+const { Button } = lUI
+
 export default {
   components: {
-    Button
+    [Button.name]: Button
   }
 }
 </script>

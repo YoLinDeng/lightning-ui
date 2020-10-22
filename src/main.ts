@@ -6,6 +6,7 @@ import './index.scss'
 import { router } from './router'
 import 'github-markdown-css'
 import Markdown from './components/Markdown.vue';
+import 'lightning-ui-beta/dist/lib/lightning.css'
 
 const app = createApp(App)
 app.use(router)

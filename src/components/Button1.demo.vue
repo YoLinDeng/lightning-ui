@@ -13,6 +13,7 @@
 <script lang="ts">
 import lUI from 'lightning-ui-beta'
 const { Button } = lUI
+
 export default {
   components: {
     [Button.name]: Button

@@ -3,22 +3,20 @@
 </demo>
 <template>
 <div>
-  <Button @click="showDialog">打开对话框</Button>
+  <l-button @click="showDialog">打开对话框</l-button>
 </div>
 </template>
 
 <script lang="ts">
-import Button from '../lib/Button.vue'
+import lUI from 'lightning-ui-beta'
+const { Button, openDialog } = lUI
 import {
   ref,
   h
 } from 'vue'
-import {
-  openDialog
-} from '../lib/openDialog'
 export default {
   components: {
-    Button
+    [Button.name]: Button
   },
   setup() {
     const showDialog = () => {

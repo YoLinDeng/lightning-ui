@@ -3,8 +3,8 @@
 </demo>
 <template>
 <div>
-  <Button @click="toggle">打开对话框</Button>
-  <Dialog
+  <l-button @click="toggle">打开对话框</l-button>
+  <l-dialog
     v-model:visible="visibleDialog"
     :closeOnClickOverlay="false"
     :ok="confirm"
@@ -19,23 +19,19 @@
       <strong>hi～</strong>
       <div>hello</div>
     </template>
-  </Dialog>
+  </l-dialog>
 </div>
 </template>
 
 <script lang="ts">
-import Dialog from '../lib/Dialog.vue'
-import Button from '../lib/Button.vue'
-import {
-  ref
-} from 'vue'
-import {
-  openDialog
-} from '../lib/openDialog'
+import lUI from 'lightning-ui-beta'
+const { Button, Dialog } = lUI
+import { ref } from 'vue'
+
 export default {
   components: {
-    Dialog,
-    Button
+    [Button.name]: Button,
+    [Dialog.name]: Dialog
   },
   setup() {
     const visibleDialog = ref(false)

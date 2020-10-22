@@ -4,18 +4,19 @@
 <template>
 <div>
   <div>
-    <Button size="big">大号按钮</Button>
-    <Button>普通按钮</Button>
-    <Button size="small">小型按钮</Button>
+    <l-button size="big">大号按钮</l-button>
+    <l-button>普通按钮</l-button>
+    <l-button size="small">小型按钮</l-button>
   </div>
 </div>
 </template>
 
 <script lang="ts">
-import Button from "../lib/Button.vue";
+import lUI from 'lightning-ui-beta'
+const { Button } = lUI
 export default {
   components: {
-    Button
+    [Button.name]: Button
   }
 }
 </script>

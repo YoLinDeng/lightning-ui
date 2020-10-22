@@ -1360,6 +1360,42 @@ lightning-ui-beta@^0.0.8:
     vue "^3.0.0"
     vue-router "4.0.0-beta.3"
 
+lightning-ui-beta@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/lightning-ui-beta/-/lightning-ui-beta-0.0.9.tgz#1c583e51998bef4d67d05f0ea848372a09e7dce0"
+  integrity sha512-E68ZCBVmsGZgsRUW9QPLYPYnvUSrBQxvd7FvcfAQgDJnn6KUqBZBNRUf89x49Ugejn45+V5BMpB/v/ugF+CkmQ==
+  dependencies:
+    github-markdown-css "^4.0.0"
+    lightning-ui-beta "^0.0.8"
+    marked "^1.1.1"
+    prismjs "^1.21.0"
+    vue "^3.0.0"
+    vue-router "4.0.0-beta.3"
+
+lightning-ui-beta@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/lightning-ui-beta/-/lightning-ui-beta-0.1.0.tgz#7eef19f36c37733779fc02b54b1564e0d323fdb4"
+  integrity sha512-PJ/bysw/wc03vcDLv7Boagw+oc+VHfCJbCWiBdxoyozWfu7wRSYZjPEvEBBfMyUMcacPqJa3BN7ob20RbUxflw==
+  dependencies:
+    github-markdown-css "^4.0.0"
+    lightning-ui-beta "^0.0.9"
+    marked "^1.1.1"
+    prismjs "^1.21.0"
+    vue "^3.0.0"
+    vue-router "4.0.0-beta.3"
+
+lightning-ui-beta@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/lightning-ui-beta/-/lightning-ui-beta-0.1.1.tgz#f79ade491c6dbd92d219268369e744a40175dc25"
+  integrity sha512-HM/JiSiDe8hRja0PZBgp/fy17TM8LINAM3pz98NE92QmKlP+un5fzGuzBX/2d4Os8vaph1xp1VfKo3l+riLt9g==
+  dependencies:
+    github-markdown-css "^4.0.0"
+    lightning-ui-beta "^0.1.0"
+    marked "^1.1.1"
+    prismjs "^1.21.0"
+    vue "^3.0.0"
+    vue-router "4.0.0-beta.3"
+
 lightning-ui@^0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/lightning-ui/-/lightning-ui-0.0.4.tgz#16969504847ffac871fa4eac4c874b9d606825a0"

@@ -1,6 +1,6 @@
 {
   "name": "lightning-ui-beta",
-  "version": "0.0.8",
+  "version": "0.1.1",
   "files": [
     "dist/lib/*"
   ],
@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "github-markdown-css": "^4.0.0",
-    "lightning-ui-beta": "^0.0.8",
+    "lightning-ui-beta": "^0.1.1",
     "marked": "^1.1.1",
     "prismjs": "^1.21.0",
     "vue": "^3.0.0",

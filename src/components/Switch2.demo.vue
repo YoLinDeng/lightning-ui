@@ -2,17 +2,19 @@
 支持 disabled
 </demo>
 <template>
-  <Switch v-model:value="bool" disabled />
+  <l-switch v-model:value="bool" disabled />
 </template>
 
 <script lang="ts">
-import Switch from '../lib/Switch.vue'
+import lUI from 'lightning-ui-beta'
+const { Switch } = lUI
+
 import {
   ref
 } from 'vue'
 export default {
   components: {
-    Switch,
+    [Switch.name]: Switch
   },
   setup() {
     const bool = ref(false)
